@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DrumKit</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <label class="switch">
+        <input type="checkbox" onclick="hideElement('piano')" />
+        <span class="slider round"></span>
+      </label>
+
+      <span class="switch_text">Piano switch</span>
+
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">808</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">crash</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">perc</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">DEMO</span>
+        </div>
+      </div>
+
+      <div class="keys" id="piano">
+        <div data-key="81" class="key">
+          <kbd>Q</kbd>
+          <span class="sound">g4</span>
+        </div>
+        <div data-key="87" class="key">
+          <kbd>W</kbd>
+          <span class="sound">c5</span>
+        </div>
+        <div data-key="69" class="key">
+          <kbd>E</kbd>
+          <span class="sound">d#5</span>
+        </div>
+        <div data-key="82" class="key">
+          <kbd>R</kbd>
+          <span class="sound">g5</span>
+        </div>
+        <div data-key="84" class="key">
+          <kbd>T</kbd>
+          <span class="sound">c6</span>
+        </div>
+        <div data-key="89" class="key">
+          <kbd>Y</kbd>
+          <span class="sound">d#6</span>
+        </div>
+        <div data-key="85" class="key">
+          <kbd>U</kbd>
+          <span class="sound">g6</span>
+        </div>
+      </div>
+    </div>
+
+    <audio data-key="65" src="sounds/808.wav"></audio>
+    <audio data-key="83" src="sounds/clap.wav"></audio>
+    <audio data-key="68" src="sounds/crash.wav"></audio>
+    <audio data-key="70" src="sounds/hihat.wav"></audio>
+    <audio data-key="71" src="sounds/kick.wav"></audio>
+    <audio data-key="72" src="sounds/perc.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/demo.wav"></audio>
+
+    <audio data-key="81" src="sounds/1_g4.wav" class="piano_keys"></audio>
+    <audio data-key="87" src="sounds/2_c5.wav" class="piano_keys"></audio>
+    <audio data-key="69" src="sounds/3_dsh5.wav" class="piano_keys"></audio>
+    <audio data-key="82" src="sounds/4_g5.wav" class="piano_keys"></audio>
+    <audio data-key="84" src="sounds/5_c6.wav" class="piano_keys"></audio>
+    <audio data-key="89" src="sounds/6_dsh6.wav" class="piano_keys"></audio>
+    <audio data-key="85" src="sounds/7_g6.wav" class="piano_keys"></audio>
+  </body>
+  <script src="script.js"></script>
+</html>
